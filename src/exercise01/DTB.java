@@ -11,6 +11,7 @@ public class DTB {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/session14exercise01?createIfNotExist", "root", "123456");
             if (con != null) {
                 System.out.println("Connected to the database");
+                return con;
             } else {
                 System.out.println("Failed to make connection");
             }
